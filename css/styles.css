@@ -1,0 +1,140 @@
+.slider .content-body .css-example .bg-color{
+	background: none repeat scroll 0 0 #ff;
+	border-radius: 5px;
+	box-shadow 0 1px 3px rgba(0,0,0,0.2);
+	margin: 0 auto;
+	padding: 100px;
+	text-align: center;
+	width: 200px;
+}
+
+/** TRANSFORMATIONS **/
+.transform-examples{
+	margin-bottom: 20px;
+}.transform-examples div:not(.clear){
+	border: 1px solid red;
+	float: left;
+	height: 180px;
+	margin: 5px 50px;
+	padding: 10px 2px;
+	width: 80px;
+}.transform-examples .scale{
+	-moz-transform: scale(1,0.7);
+	-webkit-transform: scale(1,0.7);
+	-o-transform: scale(1,0.7);
+	-ms-transform: scale(1,0.7);
+	transform: scale(1,0.7);
+}.transform-examples .rotate{
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}.transform-examples .skew{
+	-webkit-transform: skew(35deg);
+	-moz-transform: skew(35deg);	
+	-ms-transform: skew(35deg);
+	-o-transform: skew(35deg);
+	transform: skew(35deg);
+}.transform-examples .translate{
+	-webkit-transform: translate(10px,20px);
+	-moz-transform: translate(10px,20px);
+	-ms-transform: translate(10px,20px);
+	-o-transform: translate(10px,20px);
+	transform: translate(10px,20px);
+}.transform-examples .rotate-skew-scale-translate{
+	-webkit-transform: scale(1.1,1.1) rotate(40deg) translate(10px,20px) skew(30deg);
+	-moz-transform: scale(1.1,1.1) rotate(40deg) translate(10px,20px) skew(30deg);
+	-ms-transform: scale(1.1,1.1) rotate(40deg) translate(10px,20px) skew(30deg);
+	-o-transform: scale(1.1,1.1) rotate(40deg) translate(10px,20px) skew(30deg);
+	transform: scale(1.1,1.1) rotate(40deg) translate(10px,20px) skew(30deg);
+}
+
+.anima-hover .hover{
+	margin-top:25px;
+	height: 100px;
+	width: 100px;
+	border: 1px solid red;
+	margin: 10px auto;
+	text-align: center;
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out;
+	-o-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;
+}.anima-hover .hover:hover
+/*.anima-hover .hover.hover_effect*/{
+	-webkit-transform: rotate(720deg) scale(2,2);
+	-moz-transform: rotate(720deg) scale(2,2);
+	-ms-transform: rotate(720deg) scale(2,2);
+	-o-transform: rotate(720deg) scale(2,2);
+	transform: rotate(720deg) scale(2,2);
+}
+
+.threed-example{
+	width: 352px;
+	height: 190px;
+	margin:0 auto 10px;
+	border: 1px solid #aaa;
+	padding:10px;
+}.threed-example div:not(.clear){
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;	
+
+	-webkit-perspective: 800px;
+	-webkit-perspective-origin: 50% 100px;
+	-moz-perspective: 800px;
+	-moz-perspective-origin: 50% 100px;
+	-ms-perspective: 800px;
+	-ms-perspective-origin: 50% 100px;
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+
+	width: 70px;
+	height: 130px;
+	margin: 10px 20px;
+	padding: 10px;
+	border: 1px blue solid;
+	float: left;
+}.threed-example:hover .rotateX, .threed-example.hover_effect .rotateX  {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}.threed-example:hover .rotateY, .threed-example.hover_effect .rotateY  {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}.threed-example:hover .rotateZ, .threed-example.hover_effect .rotateZ  {
+	-webkit-transform: rotateZ(180deg);
+	-moz-transform: rotateZ(180deg);
+	-ms-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+}
+
+
+.example-css-keyframes{
+	width: 100px;
+	height: 100px;
+	background: url(http://thumbs.ebaystatic.com/d/l96/m/mSYpg4ecViIdubW5WJyjIuA.jpg);
+	position: relative;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove{
+	0%	{ top: 0px;   }
+	25% { top: 200px; }
+	75% { top: 50px;  }
+	100%{ top: 100px; }
+}
+
+@keyframes mymove{
+	0%	{ top: 0px;   }
+	25% { top: 200px; }
+	75% { top: 50px;  }
+	100%{ top: 100px; }
+}
